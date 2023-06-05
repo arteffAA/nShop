@@ -1,0 +1,409 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0% auto;
+    max-width: 1200px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    z-index: 999;
+    
+}
+
+
+.contaner {
+    margin-top: 30px;
+}
+
+.search {
+    margin-left: 120px;
+    display: inline-block;
+    border: 3px solid #ececec;
+  }
+  
+  #search-input {
+    padding: 15px 20px;
+    border: none;
+    width: 200px;
+  }
+  
+button[type="submit"] {
+    display: none;
+}
+
+  
+  button[type="submit"] {
+    display: none;
+  }
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.logo {
+    max-width: 80px;
+    padding-right: 190px;
+}
+
+.nike-logo-2 {
+    filter: red(100%); 
+    position: absolute;
+    width: 300px;
+    margin-left: 650px;
+    margin-top: -450px;
+    transform: rotate(-8deg);
+    z-index: -2;
+}
+
+.emoji {
+    filter: red(100%); 
+    position: absolute;
+    width: 300px;
+    margin-left: 310px;
+    margin-top: -500px;
+    transform: rotate(35deg)
+}
+
+
+.header-text {
+    padding: 15px;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+}
+
+
+.header-text::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background-color: #ff0000;
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+  
+  .header-text:hover::after {
+    width: 100%;
+  }
+  
+  .header-text.active::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #ff0000;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+
+.main {
+    padding-right: 450px;
+    margin-top: 100px;
+}
+
+.info {
+    max-width: 700px;
+}
+
+.info-title {
+    font-size: 86px;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+.info-title-2 {
+    font-size: 86px;
+    font-weight: bold;
+    line-height: 80px;
+    margin-left: -5px;
+
+}
+
+.description {
+    margin-right: 400px;
+    max-width: 300px;
+    margin-top: 40px;
+    line-height: 30px;
+}
+
+.nike {
+    position: absolute;
+    margin-top: -600px;
+    margin-left: 500px;
+    width: 900px;
+    max-width: 1100px;
+    transform: rotate(-20deg) scaleX(-1); 
+}
+
+.price {
+    margin-top: 30px;
+    padding-left: -10px;
+}
+
+.eur {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.icon {
+    margin-right: 20px;
+}
+
+.buy {
+    position: absolute;
+    margin-top: 60px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 18px 56px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.buy:hover {
+    transition: all 0.2s 0.2s;
+    background-color: #ff5a5a;
+}
+
+.square {
+    position: absolute;
+    margin-left: 450px;
+    margin-top: -900px;
+    max-width: 1200px;
+    width: 70rem;
+    height: 70rem;
+    background-color: #ececec;
+    z-index: -99;
+  }
+
+.square-2 {
+    position: absolute;
+    margin-left: 400px;
+    margin-top: -160px;
+    max-width: 1200px;
+    width: 7rem;
+    height: 7rem;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.sale {
+    display: flex;
+    margin-right: 30px;
+}
+
+
+.square-3 {
+    position: relative;
+    width: 190px;
+    height: 120px;
+    background-color: white;
+    margin-right: -500px;
+    margin-top: 0px;
+  }
+  
+  .square-3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #ff0000;
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .square-3:hover::after {
+    transform: scaleY(1);
+  }
+
+
+.nike-1 {
+    position: absolute;
+    transform: rotate(-20deg); 
+    width: 700px;
+    margin-left: 560px;
+    margin-top: -750px;
+    margin-bottom: 20px;
+    z-index: -1;
+}
+
+.nike-2 {
+    position: absolute;
+    transform: rotate(-20deg); 
+    width: 700px;
+    margin-left: 500px;
+    margin-top: -800px;
+    margin-bottom: 20px;
+    z-index: -1;
+}
+
+.nike-3 {
+    position: absolute;
+    margin-top: -650px;
+    margin-left: 500px;
+    width: 900px;
+    max-width: 1100px;
+    transform: rotate(-20deg) scaleX(-1); 
+    z-index: -1;
+}
+
+@keyframes textFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: textFadeIn 1s ease-in;
+}
+
+.white-square {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: -260px;
+    padding: 90px 900px;
+    background-color: #fff;
+}
+.video {
+    margin-top: -75px;
+    margin-left: -800px;
+}
+
+.social ul {
+    margin-left: -360px;
+    margin-top: -100px;
+    list-style: none;
+    display: flex;
+}
+
+.social li {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 30px;
+}
+
+.social a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.black-square {
+    margin-left: 245px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 600px;
+    height: 150px;
+    margin-top: -108px;
+}
+
+.text {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-left: 120px;
+}
+
+.icon {
+    margin-left: 20px;
+}
+
+.social ul li a:hover {
+    color: #ff0000;
+    transition: all 1s;
+}
+
+.about {
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 100px;
+    max-width: 900px;
+    font-size: 18px;
+}
+
+.who {
+    margin-top: 40px;
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.delivety {
+    margin-top: -80px;
+    padding: 30px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+
+.circle-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    color: #030303;
+    font-size: 24px;
+}
+
+.arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 50px;
+    font-size: 18px;
+    color: #000000;
+}
+
+@media only screen and (max-width: 768px) {
+    .burger-menu {
+      display: block;
+    }
+  
+    .menu-items {
+      display: none;
+    }
+  
+    .burger-icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 25px;
+      height: 20px;
+      cursor: pointer;
+    }
+  
+    .burger-icon span {
+      width: 100%;
+      height: 2px;
+      background-color: black;
+    }
+  
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
